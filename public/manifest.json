@@ -1,11 +1,11 @@
 {
-  "short_name": "PancakeSwap",
-  "name": "PancakeSwap",
-  "description": "Farm CAKE with Pancake LP Tokens",
-  "homepage_url": "https://pancakeswap.finance",
+  "short_name": "ThreefoldSwap",
+  "name": "ThreefoldSwap",
+  "description": "ThreefoldSwap",
+  "homepage_url": "https://threefold.io",
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#1FC7D4",
+  "theme_color": "#4103fc",
   "background_color": "#ffffff",
   "orientation": "portrait",
   "icons": [

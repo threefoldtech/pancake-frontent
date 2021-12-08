@@ -42,24 +42,8 @@ const Footer: React.FC<{ variant?: FooterVariant }> = ({ variant = 'default' }) 
   const isSide = variant === 'side'
   return (
     <Wrapper $isSide={isSide}>
-      <Flex flexDirection={isSide ? 'column' : ['column', 'column', 'row']} alignItems="center">
-        <ButtonMenu variant="subtle" scale="sm" activeIndex={0}>
-          <ButtonMenuItem>V2</ButtonMenuItem>
-          <ButtonMenuItem as="a" href="https://v1exchange.pancakeswap.finance/#/">
-            {t('V1 (old)')}
-          </ButtonMenuItem>
-        </ButtonMenu>
-        <LinkExternal
-          id="ercBridge"
-          href="https://docs.binance.org/smart-chain/guides/cross-chain.html"
-          ml={[0, 0, '40px']}
-          mt={['20px', '20px', isSide ? '20px' : 0]}
-          mb={['8px', '8px', 0]}
-        >
-          {t('Convert ERC-20 to BEP-20')}
-        </LinkExternal>
-      </Flex>
-      {isSide && <Flex flexGrow={1} />}
+     
+     
       <Flex
         flexGrow={isSide ? 0 : 1}
         alignItems="center"
@@ -71,10 +55,10 @@ const Footer: React.FC<{ variant?: FooterVariant }> = ({ variant = 'default' }) 
             id="clickExchangeHelp"
             as="a"
             external
-            href="https://docs.pancakeswap.finance/products/pancakeswap-exchange"
+            href="https://threefold.io"
             variant="subtle"
           >
-            {t('Need help ?')}
+            {t('Need help for swap ?')}
           </Button>
           <Svg viewBox="0 0 16 16">
             <path d="M0 16V0C0 0 3 1 6 1C9 1 16 -2 16 3.5C16 10.5 7.5 16 0 16Z" />

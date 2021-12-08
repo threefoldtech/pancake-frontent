@@ -8,7 +8,7 @@
     "build": "CI=false && GENERATE_SOURCEMAP=false react-scripts build",
     "test": "react-scripts test --testPathIgnorePatterns=/src/__tests__/config/",
     "test:config": "react-scripts test --testPathPattern=/src/__tests__/config/",
-    "integration-test": "start-server-and-test 'serve -s build -p 3000' http://localhost:3000 'cypress run'",
+    "integration-test": "start-server-and-test 'serve -s build -p 3000' http://dev.itx.cloud:3000 ", 
     "eject": "react-scripts eject",
     "lint": "eslint '**/*.{js,jsx,ts,tsx}'",
     "format:check": "prettier --check \"**/*.{js,jsx,ts,tsx}\"",

@@ -107,10 +107,10 @@ const Hero = () => {
       >
         <Flex flex="1" flexDirection="column">
           <Heading scale="xxl" color="secondary" mb="24px">
-            {t('The moon is made of pancakes.')}
+            {t('Get Threefold Tokens')}
           </Heading>
           <Heading scale="md" mb="24px">
-            {t('Trade, earn, and win crypto on the most popular decentralized platform in the galaxy.')}
+            {t('Trade for TFT')}
           </Heading>
           <Flex>
             {!account && <ConnectWalletButton mr="8px" />}
@@ -118,24 +118,6 @@ const Hero = () => {
               <Button variant={!account ? 'secondary' : 'primary'}>{t('Trade Now')}</Button>
             </Link>
           </Flex>
-        </Flex>
-        <Flex
-          height={['192px', null, null, '100%']}
-          width={['192px', null, null, '100%']}
-          flex={[null, null, null, '1']}
-          mb={['24px', null, null, '0']}
-          position="relative"
-        >
-          <BunnyWrapper>
-            <picture>
-              <source type="image/webp" srcSet={getSrcSet(imagePath, imageSrc, '.webp')} />
-              <source type="image/png" srcSet={getSrcSet(imagePath, imageSrc)} />
-              <img src={`${imagePath}${imageSrc}.png`} alt={t('Lunar bunny')} />
-            </picture>
-          </BunnyWrapper>
-          <StarsWrapper>
-            <CompositeImage {...starsImage} />
-          </StarsWrapper>
         </Flex>
       </Flex>
     </>
